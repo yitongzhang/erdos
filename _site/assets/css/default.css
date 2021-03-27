@@ -1,0 +1,58 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+@font-face { font-family: "Inter"; src: url("../fonts/Inter-Regular.woff"); font-weight: 400; }
+
+@font-face { font-family: "Inter"; src: url("../fonts/Inter-Medium.woff"); font-weight: 500; }
+
+@font-face { font-family: "Inter"; src: url("../fonts/Inter-SemiBold.woff"); font-weight: 600; }
+
+@font-face { font-family: "Inter"; src: url("../fonts/Inter-Bold.woff"); font-weight: 700; }
+
+html { font-size: 62.5%; }
+
+body { font-size: 1.8rem; line-height: 2.8rem; font-weight: 400; font-family: "Inter", Sans-Serif; }
+
+h1 { font-size: 3.2rem; line-height: 4.4rem; color: #103C29; }
+
+h2 { font-size: 1.8rem; line-height: 2.4rem; font-weight: 600; color: #103C29; }
+
+h6 { font-size: 1.2rem; line-height: 1.4rem; color: #6B7D76; }
+
+p, ul, ol { margin-bottom: 16px; color: #6B7D76; }
+
+ol { list-style: decimal; list-style-position: inside; }
+
+ul li::before { content: "\2022"; color: #F0F2F2; display: inline-block; width: 0.8em; }
+
+a { text-decoration: none; color: inherit; }
+
+html { background-color: #E5E5E5; }
+
+body { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
+
+nav { display: flex; justify-content: space-between; margin: 64px 0px 32px 0px; }
+
+nav .links { display: flex; }
+
+nav .links h5 { margin-left: 24px; }
+
+nav .links h5:first-child { margin-left: 0px; }
+
+nav a { transition: color 300ms; }
+
+nav a:hover { color: #103C29; }
+
+/*# sourceMappingURL=default.css.map */

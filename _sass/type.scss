@@ -1,0 +1,80 @@
+@font-face{
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "Inter";
+    src: url("../fonts/Inter-Medium.woff");
+    font-weight: 500;
+}
+
+@font-face{
+    font-family: "Inter";
+    src: url("../fonts/Inter-SemiBold.woff");
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Inter";
+    src: url("../fonts/Inter-Bold.woff");
+    font-weight: 700;
+}
+
+$font-sans: "Inter", Sans-Serif;
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    font-family: $font-sans;
+}
+
+h1,h2,h3,h4,h5,h6{
+}
+
+h1{ //header one
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+    color:$color-primary;
+}
+
+h2{ //header two
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    color:$color-primary;
+}
+
+h6{ //caption
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: $color-secondary;
+}
+
+p, ul, ol{
+    margin-bottom: 16px;
+    color: $color-secondary;
+}
+
+ol{
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+ul li::before {
+    content: "\2022"; 
+    color:$color-tertiary;
+    display: inline-block;
+    width: 0.8em;
+  }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
