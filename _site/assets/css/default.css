@@ -35,13 +35,11 @@ p, ul, ol { margin-bottom: 16px; color: #6B7D76; }
 
 ol { list-style: decimal; list-style-position: inside; }
 
-ul li::before { content: "\2022"; color: #F0F2F2; display: inline-block; width: 0.8em; }
-
 a { text-decoration: none; color: inherit; }
 
 html { background-color: #E5E5E5; }
 
-body { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
+body { max-width: 1136px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
 
 nav { display: flex; justify-content: space-between; margin: 64px 0px 32px 0px; }
 
@@ -54,5 +52,41 @@ nav .links h5:first-child { margin-left: 0px; }
 nav a { transition: color 300ms; }
 
 nav a:hover { color: #103C29; }
+
+button { font-size: 1.8rem; padding: 16px 24px; border-radius: 12px; background-color: #FFF; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); border: 1px solid #F0F2F2; }
+
+.card { background-color: #F0F2F2; padding: 24px 32px; margin: 16px 0px; }
+
+section { padding: 48px 0px; }
+
+footer { padding-top: 48px; }
+
+nav { padding-bottom: 48px; }
+
+.hero { display: flex; flex-direction: row; align-items: center; }
+
+.cardGroup { display: flex; flex-direction: row; justify-content: space-between; }
+
+.deal { display: flex; }
+
+.deal .want { padding: 48px 0px; background-color: #FFBF5F; }
+
+.deal .want h1, .deal .want h2, .deal .want h3, .deal .want h6, .deal .want p { color: #103C29; }
+
+.deal .want button { background-color: #103C29; color: #FFBF5F; border: #103C29; }
+
+.deal .offer { padding: 48px 0px; background-color: #103C29; }
+
+.deal .offer h1, .deal .offer h2, .deal .offer h3, .deal .offer h6, .deal .offer p { color: #FFBF5F; }
+
+.deal .offer button { background-color: #FFBF5F; color: #103C29; border: #FFBF5F; }
+
+.deal .arrow { height: 160px; width: 160px; position: absolute; z-index: 10; left: calc(50% - 80px); }
+
+.process .processGroup { display: flex; flex-direction: row; justify-content: space-between; }
+
+footer { display: flex; flex-direction: row; background-color: #F0F2F2; padding-left: 96px; padding-right: 96px; }
+
+footer img { width: 180px; height: 180px; }
 
 /*# sourceMappingURL=default.css.map */

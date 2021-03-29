@@ -67,14 +67,10 @@ ol{
     list-style-position: inside;
 }
 
-ul li::before {
-    content: "\2022"; 
-    color:$color-tertiary;
-    display: inline-block;
-    width: 0.8em;
-  }
-
 a{
     text-decoration: none;
     color: inherit;
+}
+
+p{
 }
