@@ -25,9 +25,9 @@ html { font-size: 62.5%; }
 
 body { font-size: 1.8rem; line-height: 2.8rem; font-weight: 400; font-family: "Inter", Sans-Serif; }
 
-h1 { font-size: 3.2rem; line-height: 4.4rem; color: #103C29; }
+h1 { font-size: 3.2rem; line-height: 4.4rem; color: #0B4022; margin-bottom: 16px; }
 
-h2 { font-size: 1.8rem; line-height: 2.4rem; font-weight: 600; color: #103C29; }
+h2 { font-size: 1.8rem; line-height: 2.4rem; font-weight: 600; color: #0B4022; margin-bottom: 8px; }
 
 h6 { font-size: 1.2rem; line-height: 1.4rem; color: #6B7D76; }
 
@@ -37,7 +37,7 @@ ol { list-style: decimal; list-style-position: inside; }
 
 a { text-decoration: none; color: inherit; }
 
-html { background-color: #E5E5E5; }
+html { background-color: #F7F9F9; }
 
 body { max-width: 1136px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
 
@@ -51,42 +51,64 @@ nav .links h5:first-child { margin-left: 0px; }
 
 nav a { transition: color 300ms; }
 
-nav a:hover { color: #103C29; }
+nav a:hover { color: #0B4022; }
 
-button { font-size: 1.8rem; padding: 16px 24px; border-radius: 12px; background-color: #FFF; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); border: 1px solid #F0F2F2; }
+button { font-size: 1.8rem; padding: 16px 24px; border-radius: 12px; background-color: #FFF; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); border: 1px solid #F0F2F2; cursor: pointer; position: relative; transition: 0.5s; }
+
+button:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); }
 
 .card { background-color: #F0F2F2; padding: 24px 32px; margin: 16px 0px; }
 
 section { padding: 48px 0px; }
 
-footer { padding-top: 48px; }
+footer { padding: 48px 72px; }
 
 nav { padding-bottom: 48px; }
 
-.hero { display: flex; flex-direction: row; align-items: center; }
+.hero { display: flex; flex-direction: row; align-items: center; justify-content: space-between; }
 
-.cardGroup { display: flex; flex-direction: row; justify-content: space-between; }
+.hero .heroCopy { max-width: 560px; }
+
+.why .whyCopy { max-width: 720px; }
+
+.why .cardGroup { display: flex; flex-direction: row; justify-content: space-between; }
 
 .deal { display: flex; }
 
-.deal .want { padding: 48px 0px; background-color: #FFBF5F; }
+.deal .dealTerms { padding: 72px 72px 56px 72px; }
 
-.deal .want h1, .deal .want h2, .deal .want h3, .deal .want h6, .deal .want p { color: #103C29; }
+.deal .dealTerms button { margin-bottom: 32px; }
 
-.deal .want button { background-color: #103C29; color: #FFBF5F; border: #103C29; }
+.deal .want { background-color: #FFBF5F; }
 
-.deal .offer { padding: 48px 0px; background-color: #103C29; }
+.deal .want h1, .deal .want h2, .deal .want h3, .deal .want h6, .deal .want p { color: #0B4022; }
+
+.deal .want button { background-color: #0B4022; color: #FFBF5F; border: #0B4022; }
+
+.deal .offer { background-color: #0B4022; }
 
 .deal .offer h1, .deal .offer h2, .deal .offer h3, .deal .offer h6, .deal .offer p { color: #FFBF5F; }
 
-.deal .offer button { background-color: #FFBF5F; color: #103C29; border: #FFBF5F; }
+.deal .offer button { background-color: #FFBF5F; color: #0B4022; border: #FFBF5F; }
 
 .deal .arrow { height: 160px; width: 160px; position: absolute; z-index: 10; left: calc(50% - 80px); }
 
-.process .processGroup { display: flex; flex-direction: row; justify-content: space-between; }
+.process .processGroup { margin-top: 32px; margin-bottom: 32px; display: flex; flex-direction: row; justify-content: space-between; }
 
-footer { display: flex; flex-direction: row; background-color: #F0F2F2; padding-left: 96px; padding-right: 96px; }
+.process .processGroup .processStep { margin-right: 24px; padding-left: 16px; border-left: 2px solid #F0F2F2; }
+
+.process .processGroup .processStep:last-child { margin-right: 0px; }
+
+.process .processGroup p { margin-bottom: 0px; }
+
+footer { display: flex; flex-direction: row; background-color: #F0F2F2; }
 
 footer img { width: 180px; height: 180px; }
+
+footer .talkToUs { padding-right: 96px; }
+
+footer .founders { display: flex; flex-direction: row; }
+
+footer .founders img:first-child { margin-right: 72px; }
 
 /*# sourceMappingURL=default.css.map */
