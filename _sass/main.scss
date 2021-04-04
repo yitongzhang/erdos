@@ -18,12 +18,12 @@ nav{
     .links{
         display: flex;
     }
-    .links h5{
-        margin-left: 24px;
-
+    h2{
+        margin-right: 24px;
+        margin-bottom: 0px;
     }
-    .links h5:first-child{
-        margin-left: 0px;
+    h2:last-child{
+        margin-right:0px;
     }
     a{
         transition: color 300ms;
@@ -31,38 +31,29 @@ nav{
     a:hover{
         color:$color-primary;
     }
+    .name{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .logo{
+            margin-right: 12px;
+        }
+    }
 }
 
-button{
-    font-size: 1.8rem;
-    padding: 16px 24px;
-    border-radius:12px;
-    background-color: $color-highlight;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    border: 1px solid $color-tertiary;
-    cursor: pointer;
-    position:relative;
-    transition:0.5s;
-}
-button:hover{
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-}
 
-.card{
-    background-color: $color-tertiary;
-    padding:24px 32px;
-    margin: 16px 0px;
-}
 
 section{
-    padding:48px 0px;
+    padding: 64px 0px;
 }
 footer{
     padding: 48px 72px;
 }
-nav{
-    padding-bottom: 48px;
+
+.card{
+    border-top: 4px solid $color-primary;
 }
+
 
 
 // -----------------
@@ -72,9 +63,35 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    .heroCopy{
-        max-width: 560px;
+    padding: 64px 0px;
+    h1, p{
+        max-width: 640px;
     }
+    .heroImgContainer{
+        position: relative;
+    }
+    .heroImg.base{
+        width: 360px;
+    }
+    .heroImg.convo{
+        position: absolute;
+        bottom: 0;
+    }
+    .heroImg.left{
+        left:-24px;
+    }
+    .heroImg.right{
+        right:0px;
+    }
+    .heroImg.convo.one{
+        bottom: 120px;
+        animation: 0.5s cubic-bezier(0, 0, 0.58, 1.0) 0s 1 normal both running slideUp;
+    }
+    .heroImg.convo.two{
+        bottom: 0px;
+        animation: 0.5s cubic-bezier(0, 0, 0.58, 1.0) 1s 1 normal both running slideUp;
+    }
+
 }
 
 .why{
@@ -85,12 +102,37 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 32px;
+    }
+    .card{
+        background-color: $color-tertiary;
+        padding:24px 32px;
+        margin: 16px 0px;
+        flex-grow: 1;
+        margin-right: 24px;
+        h2{
+            margin-bottom: 16px;
+        }
+    }
+    .card:last-child{
+        margin-right: 0px;
+    }
+    .whyErdos{
+        h2{
+            color: $color-spot;
+        }
+        border-top: 4px solid $color-accent;
+        background-color: $color-highlight;
+        
     }
 }
 
 
 .deal{
     display: flex;
+    h1{
+        margin-bottom: 24px;
+    }
     .dealTerms{
         padding: 72px 72px 56px 72px;
         button{
@@ -154,6 +196,11 @@ nav{
 footer{
     display: flex;
     flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        max-width: 320px;
+    }
     img{
         width:180px;
         height:180px;
