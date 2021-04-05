@@ -64,7 +64,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 64px 0px;
-    h1, p{
+    p{
         max-width: 640px;
     }
     .heroImgContainer{
@@ -84,12 +84,12 @@ footer{
         right:0px;
     }
     .heroImg.convo.one{
-        bottom: 120px;
-        animation: 0.5s cubic-bezier(0, 0, 0.58, 1.0) 0s 1 normal both running slideUp;
+        bottom: 92px;
+        animation: 0.8s cubic-bezier(0.190, -0.005, 0.000, 1.000) 0s 1 normal both running slideUp;
     }
     .heroImg.convo.two{
         bottom: 0px;
-        animation: 0.5s cubic-bezier(0, 0, 0.58, 1.0) 1s 1 normal both running slideUp;
+        animation: 0.8s cubic-bezier(0.190, -0.005, 0.000, 1.000) 1s 1 normal both running slideUp;
     }
 
 }
@@ -152,6 +152,7 @@ footer{
     }
 
     .offer{
+        position: relative;
         background-color:$color-primary;
         h1,h2,h3,h6,p{
             color: $color-accent;
@@ -163,11 +164,12 @@ footer{
         }
     }
     .arrow{
-        height: 160px;
-        width: 160px;
+        height: 112px;
+        width: 112px;
         position: absolute;
         z-index: 10;
-        left: calc(50% - 80px);
+        left: -56px;
+        top: calc(50% - 64px);
     }
 
 }

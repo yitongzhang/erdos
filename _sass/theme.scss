@@ -1,7 +1,7 @@
-$size-body: 1180px;
+$size-body: 1280px;
 $color-primary: #0B4022;
 $color-secondary: #6B7D76;
-$color-tertiary: #F0F2F2;
+$color-tertiary: #EDF2F1;
 $color-background: #F7F9F9;
 $color-accent:#FFBF5F;
 $color-spot:#B56233;
@@ -9,7 +9,7 @@ $color-highlight:#FFF;
 
 @keyframes slideUp {
     0% {
-      transform: translateY(20px);
+      transform: translateY(16px);
       opacity: 0;
 
     }
