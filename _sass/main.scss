@@ -220,3 +220,69 @@ footer{
     }
 }
 
+.modal{
+    padding: 0px;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: row;
+    background-color: $color-tertiary;
+    
+    p{
+        color: $color-primary;
+    }
+    .block{
+        padding: 32px 32px;
+    }
+    .founder img{
+        width: 80px;
+    }
+    .logo{
+        position: relative;
+        width: 64px;
+        border-right: 1px dashed $color-secondary;
+        .tilted-logo{
+            position: absolute;
+            top:128px;
+            left: -80px;
+            img{
+                margin-right: 12px;
+            }
+            h2{
+                margin-bottom: 0px;
+            }
+            transform: rotate(90deg);
+            width: 200px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    .story{
+        max-width: 408px;
+        border-right: 1px dashed $color-secondary;
+    }
+    .not-story{
+        .about{
+            display: flex;
+            flex-direction: row;
+            .team{
+                max-width: 60%;
+                border-right: 1px dashed $color-secondary;
+            }
+        }
+        .cta{
+            border-top: 1px dashed $color-secondary;
+            
+            .circle-button{
+                background-color: $color-primary;
+                border-radius: 100px;
+                height: 96px;
+                width: 96px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2{color: white;}
+            }
+        }
+    }
+}

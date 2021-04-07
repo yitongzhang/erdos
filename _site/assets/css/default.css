@@ -154,4 +154,32 @@ footer .founders { display: flex; flex-direction: row; }
 
 footer .founders img:first-child { margin-right: 72px; }
 
+.modal { padding: 0px; margin-bottom: 64px; display: flex; flex-direction: row; background-color: #EDF2F1; }
+
+.modal p { color: #0B4022; }
+
+.modal .block { padding: 32px 32px; }
+
+.modal .founder img { width: 80px; }
+
+.modal .logo { position: relative; width: 64px; border-right: 1px dashed #6B7D76; }
+
+.modal .logo .tilted-logo { position: absolute; top: 128px; left: -80px; transform: rotate(90deg); width: 200px; display: flex; flex-direction: row; align-items: center; }
+
+.modal .logo .tilted-logo img { margin-right: 12px; }
+
+.modal .logo .tilted-logo h2 { margin-bottom: 0px; }
+
+.modal .story { max-width: 408px; border-right: 1px dashed #6B7D76; }
+
+.modal .not-story .about { display: flex; flex-direction: row; }
+
+.modal .not-story .about .team { max-width: 60%; border-right: 1px dashed #6B7D76; }
+
+.modal .not-story .cta { border-top: 1px dashed #6B7D76; }
+
+.modal .not-story .cta .circle-button { background-color: #0B4022; border-radius: 100px; height: 96px; width: 96px; display: flex; align-items: center; justify-content: center; }
+
+.modal .not-story .cta .circle-button h2 { color: white; }
+
 /*# sourceMappingURL=default.css.map */
