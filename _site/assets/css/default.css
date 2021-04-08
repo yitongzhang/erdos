@@ -160,26 +160,56 @@ footer .founders img:first-child { margin-right: 72px; }
 
 .modal .block { padding: 32px 32px; }
 
-.modal .founder img { width: 80px; }
+.modal .logo { width: 5%; border-right: 1px dashed #6B7D76; display: flex; justify-content: center; padding-top: 40px; }
 
-.modal .logo { position: relative; width: 64px; border-right: 1px dashed #6B7D76; }
+.modal .logo .tilted-logo { writing-mode: vertical-rl; display: flex; align-items: center; }
 
-.modal .logo .tilted-logo { position: absolute; top: 128px; left: -80px; transform: rotate(90deg); width: 200px; display: flex; flex-direction: row; align-items: center; }
-
-.modal .logo .tilted-logo img { margin-right: 12px; }
+.modal .logo .tilted-logo img { margin-bottom: 12px; width: 16px; height: 16px; transform: rotate(90deg); }
 
 .modal .logo .tilted-logo h2 { margin-bottom: 0px; }
 
-.modal .story { max-width: 408px; border-right: 1px dashed #6B7D76; }
+.modal .logo p { writing-mode: vertical-rl; bottom: 0px; margin-bottom: 0px; position: absolute; bottom: 32px; }
+
+.modal .logo .logo-container { position: relative; }
+
+.modal .story { width: 40%; border-right: 1px dashed #6B7D76; }
+
+.modal .not-story { width: 55%; }
+
+.modal .not-story .founder:first-child { margin-bottom: 32px; }
+
+.modal .not-story .founder p { margin-bottom: 0px; }
+
+.modal .not-story .founder-bio { display: flex; flex-direction: row; margin-bottom: 8px; }
+
+.modal .not-story .founder-bio img { margin-right: 16px; width: 64px; height: 64px; }
+
+.modal .not-story .founder-bio div { display: flex; flex-direction: column; justify-content: center; }
+
+.modal .not-story .founder-bio p, .modal .not-story .founder-bio h2 { margin-bottom: 0px; }
 
 .modal .not-story .about { display: flex; flex-direction: row; }
 
-.modal .not-story .about .team { max-width: 60%; border-right: 1px dashed #6B7D76; }
+.modal .not-story .about .team { max-width: 50%; border-right: 1px dashed #6B7D76; }
 
-.modal .not-story .cta { border-top: 1px dashed #6B7D76; }
+.modal .not-story .cta { border-top: 1px dashed #6B7D76; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
 
-.modal .not-story .cta .circle-button { background-color: #0B4022; border-radius: 100px; height: 96px; width: 96px; display: flex; align-items: center; justify-content: center; }
+.modal .not-story .cta div { margin-right: 32px; max-width: 364px; }
 
-.modal .not-story .cta .circle-button h2 { color: white; }
+.modal .not-story .cta .circle-button { position: relative; cursor: pointer; background-color: #0B4022; border-radius: 100px; height: 104px; width: 104px; display: flex; align-items: center; justify-content: center; transition: all 300ms; }
+
+.modal .not-story .cta .circle-button h2 { color: white; margin-bottom: 2px; margin-left: 0px; margin-right: 0px; transition: all 300ms; }
+
+.modal .not-story .cta .circle-button img { opacity: 0.3; transition: all 300ms; }
+
+.modal .not-story .cta .circle-button:hover { transform: scale(1.05); }
+
+.modal .not-story .cta .circle-button:hover h2 { margin-left: -1px; margin-right: 1px; }
+
+.modal .not-story .cta .circle-button:hover img { opacity: 1; }
+
+.modal .contact .street { margin-bottom: 32px; }
+
+.modal .contact p { margin-bottom: 0px; }
 
 /*# sourceMappingURL=default.css.map */

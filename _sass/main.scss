@@ -233,56 +233,131 @@ footer{
     .block{
         padding: 32px 32px;
     }
-    .founder img{
-        width: 80px;
-    }
+
     .logo{
-        position: relative;
-        width: 64px;
+        width: 5%;
         border-right: 1px dashed $color-secondary;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
         .tilted-logo{
-            position: absolute;
-            top:128px;
-            left: -80px;
             img{
-                margin-right: 12px;
+                margin-bottom: 12px;
+                width: 16px;
+                height: 16px;
+                transform: rotate(90deg);
             }
             h2{
                 margin-bottom: 0px;
             }
-            transform: rotate(90deg);
-            width: 200px;
+            
+            writing-mode: vertical-rl;
             display: flex;
-            flex-direction: row;
             align-items: center;
+        }
+        p{
+            writing-mode: vertical-rl;
+            bottom: 0px;
+            margin-bottom: 0px;
+            position: absolute;
+            bottom: 32px;
+        }
+        .logo-container{
+            position: relative;
         }
     }
     .story{
-        max-width: 408px;
+        width: 40%;
+        // max-width: 408px;
         border-right: 1px dashed $color-secondary;
     }
     .not-story{
+        width: 55%;
+        .founder:first-child{
+            margin-bottom: 32px;
+        }
+        .founder p{
+            margin-bottom: 0px;
+        }
+        .founder-bio{
+            display: flex;
+            flex-direction: row;
+            img{
+                margin-right:16px;
+                width:64px;
+                height: 64px;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            p, h2{
+                margin-bottom: 0px;
+            }
+            margin-bottom: 8px;
+        }
         .about{
             display: flex;
             flex-direction: row;
             .team{
-                max-width: 60%;
+                max-width: 50%;
                 border-right: 1px dashed $color-secondary;
             }
         }
         .cta{
             border-top: 1px dashed $color-secondary;
-            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                margin-right: 32px;
+                max-width: 364px;
+            }
             .circle-button{
+                position: relative;
+                cursor: pointer;
                 background-color: $color-primary;
                 border-radius: 100px;
-                height: 96px;
-                width: 96px;
+                height: 104px;
+                width: 104px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                h2{color: white;}
+                h2{
+                    color: white;
+                    margin-bottom: 2px;
+                    margin-left:0px;
+                    margin-right:0px;
+                    transition: all 300ms;
+                }
+                img{
+                    opacity: 0.3;
+                    transition: all 300ms;
+                }
+                transition: all 300ms;
+            }
+            .circle-button:hover{
+                transform: scale(1.05);
+                h2{
+                    margin-left:-1px;
+                    margin-right:1px;
+                }
+                img{
+                    opacity: 1;
+                }
+
             }
         }
     }
+    .contact {
+        .street{
+            margin-bottom: 32px;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+    }
+
 }
