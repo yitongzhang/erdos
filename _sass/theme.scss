@@ -6,10 +6,22 @@ $color-background: #F7F9F9;
 $color-accent:#FFBF5F;
 $color-spot:#B56233;
 $color-highlight:#FFF;
+$color-overlay:rgba(11,64,34,0.4);
 
 @keyframes slideUp {
     0% {
       transform: translateY(16px);
+      opacity: 0;
+
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }  
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(8px);
       opacity: 0;
 
     }

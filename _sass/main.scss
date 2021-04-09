@@ -1,5 +1,13 @@
+// load in animation
+nav, .hero, .why, .dealTerms, .process{
+    animation: cubic-bezier(0.190, -0.005, 0.000, 1.000) fadeIn 2s;
+}
+
+
+
 html{
     background-color: $color-background;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -21,6 +29,7 @@ nav{
     h2{
         margin-right: 24px;
         margin-bottom: 0px;
+        cursor: pointer;
     }
     h2:last-child{
         margin-right:0px;
@@ -85,11 +94,11 @@ footer{
     }
     .heroImg.convo.one{
         bottom: 92px;
-        animation: 0.8s cubic-bezier(0.190, -0.005, 0.000, 1.000) 0s 1 normal both running slideUp;
+        animation: 0.8s cubic-bezier(0.190, -0.005, 0.000, 1.000) 1s 1 normal both running slideUp;
     }
     .heroImg.convo.two{
         bottom: 0px;
-        animation: 0.8s cubic-bezier(0.190, -0.005, 0.000, 1.000) 1s 1 normal both running slideUp;
+        animation: 0.8s cubic-bezier(0.190, -0.005, 0.000, 1.000) 2s 1 normal both running slideUp;
     }
 
 }
@@ -196,10 +205,18 @@ footer{
 }
 
 footer{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
+    z-index: 101;
+    position:relative;
+    bottom:0px;
+    transition: transform 0.3s;
+    .footer-inside{
+        position:relative;
+        bottom:0px;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
     p{
         max-width: 320px;
     }
@@ -219,11 +236,29 @@ footer{
         }
     }
 }
-
+footer:hover{
+    transform: scale(1.01);
+    cursor:url('/assets/img/aboutCursor.svg'), auto
+}
+.overlay{
+    position: fixed;
+    z-index: 100;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    opacity: 0;
+    background-color: $color-overlay;
+}
 .modal{
+    opacity: 0;
+    max-width: $size-body;
+    position: fixed;
+    top:100vh;
     padding: 0px;
-    margin-bottom: 64px;
     display: flex;
+    z-index: 102;
     flex-direction: row;
     background-color: $color-tertiary;
     
@@ -268,7 +303,6 @@ footer{
     }
     .story{
         width: 40%;
-        // max-width: 408px;
         border-right: 1px dashed $color-secondary;
     }
     .not-story{

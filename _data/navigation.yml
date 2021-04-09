@@ -1,4 +1,4 @@
 - name: Deal terms
-  link: /
+  class:  dealTerms-open
 - name: About
-  link: /about.html
+  class:  nav-modal-open
