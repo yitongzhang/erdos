@@ -219,7 +219,7 @@ footer:hover { transform: scale(1.01); cursor: url("/assets/img/aboutCursor.svg"
 
 .modal .not-story .cta .circle-button:hover img { opacity: 1; }
 
-.modal .contact .street { margin-bottom: 32px; }
+.modal .contact .street, .modal .contact .mail { margin-bottom: 38px; }
 
 .modal .contact p { margin-bottom: 0px; }
 
