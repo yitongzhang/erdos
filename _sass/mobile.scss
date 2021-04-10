@@ -1,0 +1,96 @@
+@media all and (max-width: 600px) {
+    body{
+        padding:0 24px;
+    }
+    nav{
+        margin-top: 32px;
+    }
+    section{
+        padding:32px 0px;
+    }
+    h1{
+        font-size: 2.7rem;
+        line-height: 3.8rem;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        padding-top: 16px;
+        .heroCopy{
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+            text-align: center;
+        }
+        .headline{
+            font-size: 2.7rem;
+            line-height: 3.8rem;
+            font-weight: 400;
+        }
+        .heroImg.base{
+            width: 300px;
+        }
+        .heroImg.left{
+            left: -16px;
+        }
+        .heroImg.right{
+            right: -16px;
+        }
+    }
+    .why{
+        .whyCopy{
+            text-align: center;
+        }
+        .cardGroup{
+            flex-direction: column;
+            margin-top: 16px;
+        }
+        .card{
+            margin:12px 0px;
+            padding: 32px 24px 24px 24px;
+        }
+    }
+
+    .deal{
+        margin-left: -24px;
+        margin-right: -24px;
+        flex-direction: column;
+        .dealTerms{
+            padding: 40px 24px;
+        }
+        .want{
+            padding-bottom: 72px;
+        }
+        .offer{
+            padding-top:64px;
+        }
+        .arrow{
+            top:-56px;
+            transform: rotate(90deg);
+            right:24px;
+            left:auto;
+        }
+    }
+
+    .process{
+        .processGroup{
+            flex-direction: column;
+        }
+        .processStep{
+            margin-right: 0px;
+            margin-bottom: 32px;
+        }
+    }
+
+    footer{
+        padding: 24px;
+        .founders{
+            display: none;
+        }
+        .talkToUs{
+            padding: 0px;
+        }
+        button{
+            width: 100%;
+        }
+    }
+}

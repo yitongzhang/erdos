@@ -37,6 +37,7 @@ var footerHeight = footer.offsetHeight;
 var modalHeight = modal.offsetHeight;
 var currentModalOpenedFromFooter = false;
 
+console.log(footerHeight);
 function injectAnimationParams(direction) {
   if(direction == 'in'){
     modal.style.transition = "top cubic-bezier(0.190, -0.005, 0.000, 1.000)  600ms, opacity cubic-bezier(0.190, -0.005, 0.000, 1.000)  300ms 300ms";

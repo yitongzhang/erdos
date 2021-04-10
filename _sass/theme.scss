@@ -1,4 +1,5 @@
-$size-body: 1280px;
+$size-body-max: 1280px;
+$size-body-min: 880px;
 $color-primary: #0B4022;
 $color-secondary: #6B7D76;
 $color-tertiary: #EDF2F1;
@@ -6,7 +7,7 @@ $color-background: #F7F9F9;
 $color-accent:#FFBF5F;
 $color-spot:#B56233;
 $color-highlight:#FFF;
-$color-overlay:rgba(11,64,34,0.4);
+$color-overlay:rgba(39, 46, 42, 0.4);
 
 @keyframes slideUp {
     0% {

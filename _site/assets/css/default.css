@@ -63,7 +63,7 @@ nav, .hero, .why, .dealTerms, .process { animation: cubic-bezier(0.19, -0.005, 0
 
 html { background-color: #F7F9F9; scroll-behavior: smooth; }
 
-body { max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
+body { padding: 0 48px; max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; justify-content: center; }
 
 nav { display: flex; justify-content: space-between; margin: 64px 0px 32px 0px; }
 
@@ -84,8 +84,6 @@ nav .name .logo { margin-right: 12px; }
 section { padding: 64px 0px; }
 
 footer { padding: 48px 72px; }
-
-.card { border-top: 4px solid #0B4022; }
 
 .hero { display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 64px 0px; }
 
@@ -109,7 +107,7 @@ footer { padding: 48px 72px; }
 
 .why .cardGroup { display: flex; flex-direction: row; justify-content: space-between; margin-top: 32px; }
 
-.why .card { background-color: #EDF2F1; padding: 24px 32px; margin: 16px 0px; flex-grow: 1; margin-right: 24px; }
+.why .card { border-top: 4px solid #0B4022; background-color: #EDF2F1; padding: 32px 32px 24px 32px; margin: 16px 0px; flex-grow: 1; margin-right: 24px; }
 
 .why .card h2 { margin-bottom: 16px; }
 
@@ -149,7 +147,7 @@ footer { padding: 48px 72px; }
 
 .process .processGroup p { margin-bottom: 0px; }
 
-footer { z-index: 101; position: relative; bottom: 0px; transition: transform 0.3s; background-color: #EDF2F1; }
+footer { box-sizing: border-box; z-index: 101; position: relative; bottom: 0px; transition: transform 0.3s; background-color: #EDF2F1; }
 
 footer .footer-inside { position: relative; bottom: 0px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
 
@@ -165,7 +163,7 @@ footer .founders img:first-child { margin-right: 72px; }
 
 footer:hover { transform: scale(1.01); cursor: url("/assets/img/aboutCursor.svg"), auto; }
 
-.overlay { position: fixed; z-index: 100; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; opacity: 0; background-color: rgba(11, 64, 34, 0.4); }
+.overlay { position: fixed; z-index: 100; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; opacity: 0; background-color: rgba(39, 46, 42, 0.4); }
 
 .modal { opacity: 0; max-width: 1280px; position: fixed; top: 100vh; padding: 0px; display: flex; z-index: 102; flex-direction: row; background-color: #EDF2F1; }
 
@@ -224,5 +222,7 @@ footer:hover { transform: scale(1.01); cursor: url("/assets/img/aboutCursor.svg"
 .modal .contact .street { margin-bottom: 32px; }
 
 .modal .contact p { margin-bottom: 0px; }
+
+@media all and (max-width: 600px) { body { padding: 0 24px; } nav { margin-top: 32px; } section { padding: 32px 0px; } h1 { font-size: 2.7rem; line-height: 3.8rem; } .hero { flex-direction: column-reverse; padding-top: 16px; } .hero .heroCopy { display: flex; flex-direction: column; margin-top: 16px; text-align: center; } .hero .headline { font-size: 2.7rem; line-height: 3.8rem; font-weight: 400; } .hero .heroImg.base { width: 300px; } .hero .heroImg.left { left: -16px; } .hero .heroImg.right { right: -16px; } .why .whyCopy { text-align: center; } .why .cardGroup { flex-direction: column; margin-top: 16px; } .why .card { margin: 12px 0px; padding: 32px 24px 24px 24px; } .deal { margin-left: -24px; margin-right: -24px; flex-direction: column; } .deal .dealTerms { padding: 40px 24px; } .deal .want { padding-bottom: 72px; } .deal .offer { padding-top: 64px; } .deal .arrow { top: -56px; transform: rotate(90deg); right: 24px; left: auto; } .process .processGroup { flex-direction: column; } .process .processStep { margin-right: 0px; margin-bottom: 32px; } footer { padding: 24px; } footer .founders { display: none; } footer .talkToUs { padding: 0px; } footer button { width: 100%; } }
 
 /*# sourceMappingURL=default.css.map */

@@ -11,7 +11,8 @@ html{
 }
 
 body{
-    max-width: $size-body;
+    padding:0 48px;
+    max-width: $size-body-max;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -57,10 +58,6 @@ section{
 }
 footer{
     padding: 48px 72px;
-}
-
-.card{
-    border-top: 4px solid $color-primary;
 }
 
 
@@ -114,8 +111,9 @@ footer{
         margin-top: 32px;
     }
     .card{
+        border-top: 4px solid $color-primary;
         background-color: $color-tertiary;
-        padding:24px 32px;
+        padding: 32px 32px 24px 32px;
         margin: 16px 0px;
         flex-grow: 1;
         margin-right: 24px;
@@ -205,6 +203,7 @@ footer{
 }
 
 footer{
+    box-sizing:border-box;
     z-index: 101;
     position:relative;
     bottom:0px;
@@ -253,7 +252,7 @@ footer:hover{
 }
 .modal{
     opacity: 0;
-    max-width: $size-body;
+    max-width: $size-body-max;
     position: fixed;
     top:100vh;
     padding: 0px;
