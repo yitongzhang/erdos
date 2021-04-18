@@ -75,6 +75,7 @@ footer{
     }
     .heroImgContainer{
         position: relative;
+        margin-left: 32px;
     }
     .heroImg.base{
         width: 360px;
@@ -261,6 +262,9 @@ footer:hover{
     flex-direction: row;
     background-color: $color-tertiary;
     
+    .mobileNav{
+        display:none;
+    }
     p{
         color: $color-primary;
     }
@@ -292,17 +296,25 @@ footer:hover{
         p{
             writing-mode: vertical-rl;
             bottom: 0px;
-            margin-bottom: 0px;
+            margin-bottom: 32px;
             position: absolute;
             bottom: 32px;
         }
         .logo-container{
             position: relative;
         }
+        .close-modal-logo{
+            position: absolute;
+            bottom: 32px;
+            left: calc(50% - 5px);
+        }
     }
     .story{
         width: 40%;
         border-right: 1px dashed $color-secondary;
+        p:last-child{
+            margin-bottom: 0px;
+        }
     }
     .not-story{
         width: 55%;

@@ -1,9 +1,60 @@
+@media all and (max-width: 1200px) {
+    .headline{
+        font-size: 3.6rem;
+        line-height: 4.4rem;
+        font-weight: 400;
+    }
+    .modal{
+        width: 100%;
+        flex-direction: column;
+        .mobileNav{
+            display:block;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            h2{
+                margin-bottom: 0px;
+            }
+        }
+        .story,.not-story, .team{
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        .logo{
+            display: none;
+        }
+        .not-story .about, .cta{
+            flex-direction: column !important;
+        }
+        .street, .mail{
+            margin-bottom: 16px !important;
+        }
+        .block{
+            padding: 24px;
+            box-sizing: border-box;
+            border: 0px dashed $color-primary !important;
+            border-bottom: 1px dashed $color-primary !important;
+        }
+        .block:last-child{
+            border-bottom: 0px !important;;
+        }
+        .cta{
+            align-items: flex-start !important;
+        }
+    }
+}
+
+
 @media all and (max-width: 600px) {
     body{
         padding:0 24px;
     }
     nav{
         margin-top: 32px;
+        .name h2{
+            width:48px;
+            overflow: hidden;
+        }
     }
     section{
         padding:32px 0px;
@@ -26,6 +77,10 @@
             line-height: 3.8rem;
             font-weight: 400;
         }
+        .heroImgContainer{
+            position: relative;
+            margin-left: 0px;
+        }
         .heroImg.base{
             width: 300px;
         }
@@ -46,7 +101,7 @@
         }
         .card{
             margin:12px 0px;
-            padding: 32px 24px 24px 24px;
+            padding: 32px 24px 16px 24px;
         }
     }
 
