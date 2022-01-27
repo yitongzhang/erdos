@@ -1,4 +1,7 @@
-- name: Deal terms
-  class:  dealTerms-open
-- name: About
-  class:  nav-modal-open
+items:
+  - name: Deal terms
+    class:  dealTerms-open
+  - name: About
+    class:  nav-modal-open
+  - name: Blog
+    link:  /blog.html

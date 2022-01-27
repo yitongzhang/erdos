@@ -161,6 +161,8 @@ footer .founders { display: flex; flex-direction: row; }
 
 footer .founders img:first-child { margin-right: 72px; }
 
+footer .footer-twitter { float: right; margin-top: 1rem; }
+
 footer:hover { transform: scale(1.01); cursor: url("/assets/img/aboutCursor.svg"), auto; }
 
 .overlay { position: fixed; z-index: 100; top: 0px; left: 0px; width: 100%; height: 100%; pointer-events: none; opacity: 0; background-color: rgba(39, 46, 42, 0.4); }
