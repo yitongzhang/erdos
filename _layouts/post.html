@@ -6,6 +6,11 @@ layout: default
 </div>
 <div class="spacer16"></div>
 <div class="post">
+<p>
+{{ page.date | date_to_string }} {% assign author = site.authors | where: 'name', page.author |
+first %} {% if author %} - <a href="{{ author.url }}">{{ author.display_name }}</a>
+{% endif %}
+</p>
 {{ content }}
 </div>
 <div class="spacer16"></div>

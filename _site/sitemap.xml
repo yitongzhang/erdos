@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/2019/03/27/bananas.html</loc>
+<lastmod>2019-03-27T04:31:21+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2019/03/27/Looking-to-flip-an-ecommerce-store-Heres-what-you-should-be-looking-for.html</loc>
+<lastmod>2019-03-27T04:37:00+08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/blog.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/admin/</loc>
+<lastmod>2022-01-27T11:36:03+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/staff.html</loc>
+<lastmod>2022-01-27T11:08:22+08:00</lastmod>
 </url>
 </urlset>

@@ -4,8 +4,14 @@
     <h2><a href="/">Erdos&nbsp;ventures</a></h2>
   </div>
   <div class="links">
-  {% for item in site.data.navigation %}
-    <h2 class="{{ item.class }}">{{ item.name }}</h2>
+  {% for item in site.data.navigation.items %}
+    <h2 class="{{ item.class }}">{% if item.link %}<a href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</h2>
   {% endfor %}
   </div>
+</nav>
+
+<nav>
+  {% for item in site.data.navigation.items %}
+
+  {% endfor %}
 </nav>
