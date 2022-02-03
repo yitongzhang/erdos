@@ -1,6 +1,6 @@
 # example netlify.toml
 [build]
-  command = "bundle exec jekyll build"
+  command = "bundle exec jekyll serve"
   functions = "netlify/functions"
   publish = "_site"
 
