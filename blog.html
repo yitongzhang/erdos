@@ -11,7 +11,8 @@ title: Blog
     <h2>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </h2>
-    <p>{{ post.excerpt }}</p>
+    <div class="blogContainer"></div><p>{{ post.excerpt }}</p>
+    <div class="blogContainer"><p>{{ post.date }}</p></div>
   </li>
   {% endfor %}
 </ul>

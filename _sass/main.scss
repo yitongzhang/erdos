@@ -408,5 +408,10 @@ footer:hover{
             margin-bottom: 0px;
         }
     }
+    .blogContainer {
+        display: flex;
+        flex-direction: row;
+            max-width: 50%;
+    }
 
 }
